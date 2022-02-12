@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
 
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
@@ -19,67 +18,72 @@
       <fieldset class="form-group">
         <legend>Personal information</legend>
   
-          <label class="form-field">
-            Surname:
-            <input type="text" name="Surname" required>
-          </label>
+        <label class="form-field">
+          Surname:
+          <input type="text" name="Surname" required>
+        </label>
   
-          <label class="form-field">
-            Name:
-            <input type="text" name="Name" required>
-          </label>
+        <label class="form-field">
+          Name:
+          <input type="text" name="Name" required>
+        </label>
   
-          <label class="form-field">
-            How old are You?
-            <input
-              type="number"
-              name="old"
-              min="1"
-              max="100"
-              value="12"
-            >
-          </label>
+        <label class="form-field">
+          How old are You?
+          <input
+            type="number"
+            name="old"
+            min="1"
+            max="100"
+            value="12"
+          >
+        </label>
   
-          <label class="form-field">
-            Full date of birth:
-            <input
-              type="date"
-              name="date"
-              min="1910-01-01"
-              max="2021-12-31"
-            >
-          </label>
+        <label class="form-field">
+          Full date of birth:
+          <input
+            type="date"
+            name="date"
+            min="1910-01-01"
+            max="2021-12-31"
+          >
+        </label>
   
-          <label class="form-field">
-            I accept the term of the agreement
-            <input 
-              type="checkbox"
-              name="remember"
-              id="accept-term"
-              required
-            >
-          </label>
+        <label class="form-field">
+          I accept the term of the agreement
+          <input 
+            type="checkbox"
+            name="remember"
+            id="accept-term"
+            required
+          >
+        </label>
       </fieldset>
   
       <fieldset class="form-group">
         <legend>Registration</legend>
   
-          <label class="form-field">
-            E-mail:
-            <input type="email" name="email" required placeholder="email@example.com">
-          </label>
+        <label class="form-field">
+          E-mail:
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="email@example.com"
+          >
+        </label>
   
-          <label class="form-field">
-            Password:
-            <input
-              type="password"
-              name="password"
-              required
-              minlength="5"
-              maxlength="30"
-              autocomplete="off"
-            >
-          </label>
+        <label class="form-field">
+          Password:
+          <input
+            type="password"
+            name="password"
+            required
+            minlength="5"
+            maxlength="30"
+            autocomplete="off"
+          >
+        </label>
       </fieldset>
   
       <fieldset class="form-group">
@@ -140,6 +144,7 @@
             min="0"
             max="10"
             required
+            value="0"
           >
         </label>
       </fieldset>
@@ -147,22 +152,22 @@
       <fieldset class="form-group">
         <legend>Additional info:</legend>
   
-          <label class="form-field">
-            Comments:
-            <textarea
-              name="comments"
-              rows="2"
-              cols="16"
-            ></textarea>
-          </label>
+        <label class="form-field">
+          Comments:
+          <textarea
+            name="comments"
+            rows="2"
+            cols="20"
+          ></textarea>
+        </label>
   
-          <label class="form-field">
-            Would you recommend us?
-            <select name="cars" required>
-              <option value="yes">yes</option>
-              <option value="no">no</option>
-            </select>
-          </label>
+        <label class="form-field">
+          Would you recommend us?
+          <select name="cars" required>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
       </fieldset>
   
       <button type="submit">Submit</button>
